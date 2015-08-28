@@ -83,10 +83,10 @@ namespace CSharp50
 
                 // Return a double if only a double (possibly with
                 // leading and/or trailing whitespace) was provided
-                double value;
-                if (Double.TryParse(line, out value))
+                double output;
+                if (Double.TryParse(line, out output))
                 {
-                    return value;
+                    return output;
                 }
 
                 Console.Write("Retry: ");
@@ -126,10 +126,10 @@ namespace CSharp50
 
                 // Return a float if only a float (possibly with
                 // leading and/or trailing whitespace) was provided
-                float value;
-                if (Single.TryParse(line, out value))
+                float output;
+                if (Single.TryParse(line, out output))
                 {
-                    return value;
+                    return output;
                 }
 
                 Console.Write("Retry: ");
@@ -169,10 +169,10 @@ namespace CSharp50
 
                 // Return an int if only an int (possibly with
                 // leading and/or trailing whitespace) was provided
-                int value;
-                if (Int32.TryParse(line, out value))
+                int output;
+                if (Int32.TryParse(line, out output))
                 {
-                    return value;
+                    return output;
                 }
 
                 Console.Write("Retry: ");
@@ -214,10 +214,10 @@ namespace CSharp50
 
                 // Return a double if only a double (possibly with
                 // leading and/or trailing whitespace) was provided
-                long value;
-                if (Int64.TryParse(line, out value))
+                long output;
+                if (Int64.TryParse(line, out output))
                 {
-                    return value;
+                    return output;
                 }
 
                 Console.Write("Retry: ");
