@@ -252,7 +252,7 @@ namespace CSharp50
                     return null;
                 }
 
-                // Check if line is am EOL character
+                // Check if line is an EOL character
                 if (line == Environment.NewLine)
                 {
                     return String.Empty;
