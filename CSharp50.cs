@@ -185,6 +185,8 @@ namespace CSharp50
         ///     does not represent such a long, user is prompted to retry.
         ///     Leading and trailing whitespace is ignored.  For simplicity, overflow
         ///     is not detected.  If line can't be read, returns Int64.MaxValue.
+        ///     Note: This is formerly known as GetLongLong(), but there is no long long
+        ///     datatype in C#, only long.
         /// </summary>
         /// <returns>User input long; otherwise, Int64.MaxValue.</returns>
         public static long GetLong()
