@@ -21,23 +21,12 @@ namespace CSharp50
             // Try to get a char from user
             while (true)
             {
-                string line;
-                try
-                {
-                    // Get line of text, returning Char.MaxValue on failure
-                    line = Console.ReadLine();
-                    if (line == null)
-                    {
-                        return Char.MaxValue;
-                    }
-                }
-                catch
+                // Get line of text, returning Char.MaxValue on failure
+                string line = GetString();
+                if (line == null)
                 {
                     return Char.MaxValue;
                 }
-
-                // Trim leading and/or trailing whitespace
-                line = line.Trim();
 
                 // Return a char if only a char (possibly with
                 // leading and/or trailing whitespace) was provided
@@ -63,17 +52,9 @@ namespace CSharp50
             // Try to get a double from user
             while (true)
             {
-                string line;
-                try
-                {
-                    // Get line of text, returning Double.MaxValue on failure
-                    line = Console.ReadLine();
-                    if (line == null)
-                    {
-                        return Double.MaxValue;
-                    }
-                }
-                catch
+                // Get line of text, returning Double.MaxValue on failure
+                string line = GetString();
+                if (line == null)
                 {
                     return Double.MaxValue;
                 }
@@ -103,17 +84,9 @@ namespace CSharp50
             // Try to get a float from user
             while (true)
             {
-                string line;
-                try
-                {
-                    // Get line of text, returning Single.MaxValue on failure
-                    line = Console.ReadLine();
-                    if (line == null)
-                    {
-                        return Single.MaxValue;
-                    }
-                }
-                catch
+                // Get line of text, returning Single.MaxValue on failure
+                string line = GetString();
+                if (line == null)
                 {
                     return Single.MaxValue;
                 }
@@ -143,17 +116,9 @@ namespace CSharp50
             // Try to get an int from user
             while (true)
             {
-                string line;
-                try
-                {
-                    // Get line of text, returning Int32.MaxValue on failure
-                    line = Console.ReadLine();
-                    if (line == null)
-                    {
-                        return Int32.MaxValue;
-                    }
-                }
-                catch
+                // Get line of text, returning Int32.MaxValue on failure
+                string line = GetString();
+                if (line == null)
                 {
                     return Int32.MaxValue;
                 }
@@ -185,17 +150,9 @@ namespace CSharp50
             // Try to get a long from user
             while (true)
             {
-                string line;
-                try
-                {
-                    // Get line of text, returning Int64.MaxValue on failure
-                    line = Console.ReadLine();
-                    if (line == null)
-                    {
-                        return Int64.MaxValue;
-                    }
-                }
-                catch
+                // Get line of text, returning Int64.MaxValue on failure
+                string line = GetString();
+                if (line == null)
                 {
                     return Int64.MaxValue;
                 }
