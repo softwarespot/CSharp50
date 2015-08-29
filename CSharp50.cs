@@ -78,13 +78,10 @@ namespace CSharp50
                     return Double.MaxValue;
                 }
 
-                // Trim leading and/or trailing whitespace
-                line = line.Trim();
-
                 // Return a double if only a double (possibly with
                 // leading and/or trailing whitespace) was provided
                 double output;
-                if (Double.TryParse(line, out output))
+                if (Double.TryParse(line.Trim(), out output))
                 {
                     return output;
                 }
@@ -121,13 +118,10 @@ namespace CSharp50
                     return Single.MaxValue;
                 }
 
-                // Trim leading and/or trailing whitespace
-                line = line.Trim();
-
                 // Return a float if only a float (possibly with
                 // leading and/or trailing whitespace) was provided
                 float output;
-                if (Single.TryParse(line, out output))
+                if (Single.TryParse(line.Trim(), out output))
                 {
                     return output;
                 }
@@ -164,13 +158,10 @@ namespace CSharp50
                     return Int32.MaxValue;
                 }
 
-                // Trim leading and/or trailing whitespace
-                line = line.Trim();
-
                 // Return an int if only an int (possibly with
                 // leading and/or trailing whitespace) was provided
                 int output;
-                if (Int32.TryParse(line, out output))
+                if (Int32.TryParse(line.Trim(), out output))
                 {
                     return output;
                 }
@@ -209,13 +200,10 @@ namespace CSharp50
                     return Int64.MaxValue;
                 }
 
-                // Trim leading and/or trailing whitespace
-                line = line.Trim();
-
                 // Return a double if only a double (possibly with
                 // leading and/or trailing whitespace) was provided
                 long output;
-                if (Int64.TryParse(line, out output))
+                if (Int64.TryParse(line.Trim(), out output))
                 {
                     return output;
                 }
@@ -258,10 +246,7 @@ namespace CSharp50
                     return String.Empty;
                 }
 
-                // Trim leading and/or trailing whitespace
-                line = line.Trim();
-
-                return line;
+                return line.Trim();
             }
         }
     }
