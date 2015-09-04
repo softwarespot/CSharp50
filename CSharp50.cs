@@ -6,6 +6,9 @@ namespace CSharp50
     ///     Based on the original CS50 Library 5, but ported across to C#
     ///     https://manual.cs50.net/library
     ///     All rights belong to the authors of the original CS50 library
+    ///
+    ///     Note: Class names are used e.g. Double or Int32 when a static method
+    ///     is used or static property is used. This is for readability only
     /// </summary>
     public static class CSharp50
     {
