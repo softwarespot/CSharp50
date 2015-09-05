@@ -7,8 +7,8 @@ namespace CSharp50
     ///     https://manual.cs50.net/library
     ///     All rights belong to the authors of the original CS50 library
     ///
-    ///     Note: Class names are used e.g. Double or Int32 when a static method
-    ///     is used or static property is used. This is for readability only
+    ///     Note: Class names are used instead of aliases e.g. Double or Int32 when a static method
+    ///     or static property is used. This is for readability purposes only
     /// </summary>
     public static class CSharp50
     {
